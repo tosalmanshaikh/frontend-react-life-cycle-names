@@ -6,9 +6,11 @@ function App() {
   return (
     <>
       <h1>De actieve naam is: ...</h1>
-      <NameItem name="Henk" />
-      <NameItem name="Piet" />
-      <NameItem name="Jan" />
+      <ul>
+        <NameItem name="Henk" />
+        <NameItem name="Piet" />
+        <NameItem name="Jan" />
+      </ul>
     </>
   );
 }

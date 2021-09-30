@@ -26,7 +26,3 @@ of gebruik de WebStorm knop (npm start). Open http://localhost:3000 om de pagina
 5. Zorg ervoor dat het `NameItem` component het volgende doet doormiddel van Life Cycles:
    * Alléén als het component gemount wordt, wordt er `"<naam> is in de DOM geplaatst"` gelogd
    * Alleen als de actieve naam veranderd wordt (omdat de gebruiker een button heeft geklikt) en de actieve naam is op dat moment de naam van dát component geworden, wordt er `"<naam> wil graag een biertje bestellen"` gelogd.
-
-## De applicatie starten
-1. `npm install`
-2. `npm start`

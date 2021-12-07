@@ -18,9 +18,9 @@ Wanneer dit klaar is, kun je de applicatie starten met behulp van:
 of gebruik de WebStorm knop (npm start). Open http://localhost:3000 om de pagina in de browser te bekijken. Begin met het maken van wijzigingen in src/App.js: elke keer als je een bestand opslaat, zullen de wijzigingen te zien zijn op de webpagina.
 
 ## Stappenplan
-1. Maak in `App.js` een stukje state aan voor de actieve naam (`activeName`) die op dat moment een rondje geeft;
+1. Maak in `App.js` een stukje state aan voor de naam (`activeName`) van degene die het laatst een rondje gegeven heeft;
 2. Geef de _waarde_ daarvan en de _setter functie_ mee aan alle `<NameItem />` componenten;
-3. Maak de buttons in de `<NameItem />` componenten functioneel: wanneer de gebruiker op die button klikt, wordt die specifieke naam in de state van `App.js` geplaatst.
+3. Maak de buttons in de `<NameItem />` componenten functioneel: wanneer de gebruiker op die button klikt, wordt die specifieke naam als actieve naam in de state van `App.js` geplaatst.
 4. Zorg ervoor dat er vanuit `App.js` het volgende gebeurt doormiddel van Life Cycles:
    * Alléén als de pagina gerefresht wordt, wordt er `"We gaan beginnen!"` gelogd. _Tip_: kies een leuke emoji ter referentie
 5. Zorg ervoor dat er vanuit `NameItem.js` het volgende gebeurt doormiddel van Life Cycles:

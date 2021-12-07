@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <>
-      <h1>De actieve naam is: ...</h1>
+      <h1>Het laatste rondje is gegeven door: ...</h1>
       <ul>
         <NameItem name="Henk" />
         <NameItem name="Piet" />

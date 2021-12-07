@@ -20,9 +20,9 @@ of gebruik de WebStorm knop (npm start). Open http://localhost:3000 om de pagina
 ## Stappenplan
 1. Maak in `App.js` een stukje state aan voor de actieve naam (`activeName`) die op dat moment een rondje geeft;
 2. Geef de _waarde_ daarvan en de _setter functie_ mee aan alle `<NameItem />` componenten;
-3. Maak de buttons functioneel door de setter functie te gebruiken, die op de klik die specifieke naam als actieve naam _setten_.
-4. Zorg ervoor dat `App.js` het volgende doet doormiddel van Life Cycles:
+3. Maak de buttons in de `<NameItem />` componenten functioneel: wanneer de gebruiker op die button klikt, wordt die specifieke naam in de state van `App.js` geplaatst.
+4. Zorg ervoor dat er vanuit `App.js` het volgende gebeurt doormiddel van Life Cycles:
    * Alléén als de pagina gerefresht wordt, wordt er `"We gaan beginnen!"` gelogd. _Tip_: kies een leuke emoji ter referentie
-5. Zorg ervoor dat het `NameItem` component het volgende doet doormiddel van Life Cycles:
+5. Zorg ervoor dat er vanuit `NameItem.js` het volgende gebeurt doormiddel van Life Cycles:
    * Alléén als het component gemount wordt, wordt er `"<naam> is in de DOM geplaatst"` gelogd
-   * Alleen als de actieve naam veranderd wordt (omdat de gebruiker een button heeft geklikt) en de actieve naam is op dat moment de naam van dát component geworden, wordt er `"<naam> wil graag een biertje bestellen"` gelogd.
+   * Zorg dat er geluisterd wordt naar de verandering van de actieve naam (als iemand een "Geef een rondje!" button aanklikt en de state veranderd). Komt de huidige actieve naam overeen met de naam van dat `<NameItem>`? Dan wordt er `"<naam> wil graag een biertje bestellen"` gelogd.
